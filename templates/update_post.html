@@ -1,0 +1,12 @@
+<!-- update_post.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Update Post</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.title.label }} {{ form.title() }}
+        {{ form.content.label }} {{ form.content() }}
+        {{ form.submit() }}
+    </form>
+{% endblock %}
